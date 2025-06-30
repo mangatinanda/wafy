@@ -11,7 +11,7 @@ function App() {
   useTheme(); // Initialize theme
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [defaultCountry, setDefaultCountry] = useLocalStorage<Country>(
-    'whatsappify-country',
+    'wafy-country',
     getDefaultCountry()
   );
 
@@ -26,7 +26,7 @@ function App() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Whatsappify
+                Wafy
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Generate WhatsApp links instantly

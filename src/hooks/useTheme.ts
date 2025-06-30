@@ -4,7 +4,7 @@ import { useLocalStorage } from './useLocalStorage';
 type Theme = 'light' | 'dark';
 
 export function useTheme() {
-  const [theme, setTheme] = useLocalStorage<Theme>('whatsappify-theme', 'light');
+  const [theme, setTheme] = useLocalStorage<Theme>('wafy-theme', 'light');
 
   useEffect(() => {
     const root = window.document.documentElement;
